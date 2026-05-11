@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
+<html lang="zh-CN"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>智汇龙腾 - AI动捕赋能国家级非遗乔林烟花火龙传承</title>
@@ -125,22 +123,19 @@
         </div>
     </nav>
 
-    <!-- 全屏固定背景视频 - 底层层级 -->
-    <video 
-        class="fixed top-0 left-0 w-full h-full object-cover z-[-2]"
-        autoplay muted loop playsinline
-    >
+    <!-- 全屏固定背景视频 - 无遮罩 超清显示 -->
+    <video class="fixed top-0 left-0 w-full h-full object-cover z-[-2]" autoplay="" muted="" loop="" playsinline="">
         <source src="source.mp4" type="video/mp4">
         您的浏览器不支持视频播放
     </video>
 
-    <!-- 主内容区 - 调高层级，完全覆盖视频 -->
-    <main class="relative z-10">
+    <!-- 主内容区 -->
+    <main>
         <!-- 首页 -->
         <div id="page-home" class="page page-transition">
-            <!-- Hero 区域 -->
+            <!-- Hero 区域 - 调整为内容靠下布局 -->
             <section class="h-screen flex justify-between items-end relative overflow-hidden bg-transparent px-4 sm:px-6 lg:px-8 pb-8">
-                <!-- 左侧内容区 -->
+                <!-- 左侧内容区 - 左下角紧贴屏幕左边界 -->
                 <div class="text-left animate-fade-in max-w-lg mb-8">
                     <p class="text-2xl md:text-3xl text-white mb-4 text-shadow">AI 动捕赋能国家级非遗乔林烟花火龙传承</p>
                     <p class="text-lg text-gray-100 mb-10 text-shadow">
@@ -156,7 +151,7 @@
                     </div>
                 </div>
                 
-                <!-- 右侧数据卡片区 -->
+                <!-- 右侧数据卡片区 - 右下角紧贴屏幕右边界 -->
                 <div class="grid grid-cols-2 gap-3 w-64 mb-8">
                     <div class="rounded-xl aspect-square p-3 text-center card-hover flex flex-col items-center justify-center">
                         <div class="text-2xl font-bold text-secondary mb-1 title-shadow">10</div>
@@ -177,7 +172,7 @@
                 </div>
             </section>
 
-            <!-- 痛点与方案区 -->
+            <!-- 痛点与方案区 - 全透明化 适配视频背景 -->
             <section class="py-20 bg-transparent backdrop-blur-sm">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-16">
@@ -244,7 +239,7 @@
                 </div>
             </section>
 
-            <!-- 系统闭环区 -->
+            <!-- 系统闭环区 - 全透明化 适配视频背景 -->
             <section class="py-20 bg-transparent backdrop-blur-sm">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-16">
@@ -311,9 +306,9 @@
             </section>
         </div>
 
-        <!-- 动作识别页面 - 全屏深色背景+高层级，彻底覆盖视频 -->
-        <div id="page-motion" class="page page-transition hidden h-screen w-full bg-dark z-20">
-            <div class="py-12 h-full overflow-y-auto">
+        <!-- 动作识别页面 -->
+        <div id="page-motion" class="page page-transition hidden">
+            <div class="min-h-screen py-12 bg-dark">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-10">
                         <h1 class="text-3xl font-bold mb-2">动作识别演示</h1>
@@ -332,7 +327,7 @@
                             </div>
                             
                             <div class="relative aspect-video bg-darker rounded-xl overflow-hidden">
-                                <img id="videoCover" src="https://aka.doubaocdn.com/s/sDCs1wEPsM" alt="舞龙动作演示" class="w-full h-full object-cover">
+                                <img id="videoCover" src="https://aka.doubaocdn.com/s/9vw11wOos1" alt="舞龙动作演示" class="w-full h-full object-cover">
                                 <div id="recordingOverlay" class="absolute inset-0 bg-black/50 flex items-center justify-center hidden">
                                     <div class="text-center">
                                         <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-4 animate-pulse-slow">
@@ -470,9 +465,9 @@
             </div>
         </div>
 
-        <!-- 训练评分页面 - 全屏深色背景+高层级 -->
-        <div id="page-training" class="page page-transition hidden h-screen w-full bg-dark z-20">
-            <div class="py-12 h-full overflow-y-auto">
+        <!-- 训练评分页面 -->
+        <div id="page-training" class="page page-transition hidden">
+            <div class="min-h-screen py-12 bg-dark">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-10">
                         <h1 class="text-3xl font-bold mb-2">训练评分反馈</h1>
@@ -609,9 +604,9 @@
             </div>
         </div>
 
-        <!-- 数字基因库页面 - 全屏深色背景+高层级 -->
-        <div id="page-gene" class="page page-transition hidden h-screen w-full bg-dark z-20">
-            <div class="py-12 h-full overflow-y-auto">
+        <!-- 数字基因库页面 -->
+        <div id="page-gene" class="page page-transition hidden">
+            <div class="min-h-screen py-12 bg-dark">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-10">
                         <h1 class="text-3xl font-bold mb-2">数字基因库</h1>
@@ -650,7 +645,7 @@
                         <div class="gene-card" data-id="gene_001" data-category="基础动作" data-risk="中风险" data-name="八字舞龙">
                             <div class="glass-effect rounded-2xl overflow-hidden card-hover cursor-pointer" onclick="showGeneDetail('gene_001')">
                                 <div class="relative h-48">
-                                    <img src="https://aka.doubaocdn.com/s/sDCs1wEPsM" alt="八字舞龙" class="w-full h-full object-cover">
+                                    <img src="https://aka.doubaocdn.com/s/9vw11wOos1" alt="八字舞龙" class="w-full h-full object-cover">
                                     <div class="absolute top-3 right-3">
                                         <span class="px-3 py-1 bg-riskMedium/80 text-white text-xs rounded-full">中风险</span>
                                     </div>
@@ -674,7 +669,7 @@
                         <div class="gene-card" data-id="gene_002" data-category="危险动作" data-risk="高风险" data-name="急转衔接">
                             <div class="glass-effect rounded-2xl overflow-hidden card-hover cursor-pointer" onclick="showGeneDetail('gene_002')">
                                 <div class="relative h-48">
-                                    <img src="https://aka.doubaocdn.com/s/nDFw1wEPsM" alt="急转衔接" class="w-full h-full object-cover">
+                                    <img src="https://aka.doubaocdn.com/s/qezG1wOoso" alt="急转衔接" class="w-full h-full object-cover">
                                     <div class="absolute top-3 right-3">
                                         <span class="px-3 py-1 bg-riskHigh/80 text-white text-xs rounded-full">高风险</span>
                                     </div>
@@ -698,7 +693,7 @@
                         <div class="gene-card" data-id="gene_003" data-category="基础动作" data-risk="低风险" data-name="游龙巡街">
                             <div class="glass-effect rounded-2xl overflow-hidden card-hover cursor-pointer" onclick="showGeneDetail('gene_003')">
                                 <div class="relative h-48">
-                                    <img src="https://aka.doubaocdn.com/s/Jf6x1wEPs4" alt="烟花火龙" class="w-full h-full object-cover">
+                                    <img src="https://p3-search.byteimg.com/obj/labis/94cb3a4aa3cfad5b88e936439700dedc" alt="烟花火龙" class="w-full h-full object-cover">
                                     <div class="absolute top-3 right-3">
                                         <span class="px-3 py-1 bg-riskLow/80 text-white text-xs rounded-full">低风险</span>
                                     </div>
@@ -722,7 +717,7 @@
                         <div class="gene-card" data-id="gene_004" data-category="组合动作" data-risk="中风险" data-name="龙穿花">
                             <div class="glass-effect rounded-2xl overflow-hidden card-hover cursor-pointer" onclick="showGeneDetail('gene_004')">
                                 <div class="relative h-48">
-                                    <img src="https://aka.doubaocdn.com/s/Emzr1wEPs4" alt="龙穿花" class="w-full h-full object-cover">
+                                    <img src="https://aka.doubaocdn.com/s/yfUF1wOoso" alt="龙穿花" class="w-full h-full object-cover">
                                     <div class="absolute top-3 right-3">
                                         <span class="px-3 py-1 bg-riskMedium/80 text-white text-xs rounded-full">中风险</span>
                                     </div>
@@ -745,7 +740,7 @@
                         <div class="gene-card" data-id="gene_005" data-category="组合动作" data-risk="中风险" data-name="盘龙抱柱">
                             <div class="glass-effect rounded-2xl overflow-hidden card-hover cursor-pointer" onclick="showGeneDetail('gene_005')">
                                 <div class="relative h-48">
-                                    <img src="https://aka.doubaocdn.com/s/sDCs1wEPsM" alt="盘龙" class="w-full h-full object-cover">
+                                    <img src="https://aka.doubaocdn.com/s/U6ag1wOose" alt="盘龙" class="w-full h-full object-cover">
                                     <div class="absolute top-3 right-3">
                                         <span class="px-3 py-1 bg-riskMedium/80 text-white text-xs rounded-full">中风险</span>
                                     </div>
@@ -768,7 +763,7 @@
                         <div class="gene-card" data-id="gene_006" data-category="危险动作" data-risk="高风险" data-name="烟花燃放">
                             <div class="glass-effect rounded-2xl overflow-hidden card-hover cursor-pointer" onclick="showGeneDetail('gene_006')">
                                 <div class="relative h-48">
-                                    <img src="https://aka.doubaocdn.com/s/Jf6x1wEPs4" alt="烟花燃放" class="w-full h-full object-cover">
+                                    <img src="https://aka.doubaocdn.com/s/Ya2X1wOosL" alt="烟花燃放" class="w-full h-full object-cover">
                                     <div class="absolute top-3 right-3">
                                         <span class="px-3 py-1 bg-riskHigh/80 text-white text-xs rounded-full">高风险</span>
                                     </div>
@@ -820,7 +815,7 @@
                 risk: "medium",
                 riskText: "转身幅度过大，存在动作失稳风险",
                 suggestion: "建议保持步伐节奏一致，降低上肢摆动幅度",
-                cover: "https://aka.doubaocdn.com/s/sDCs1wEPsM",
+                cover: "https://aka.doubaocdn.com/s/9vw11wOos1",
                 training: {
                     name: "八字舞龙",
                     totalScore: 80,
@@ -844,7 +839,7 @@
                 risk: "high",
                 riskText: "高速转身存在碰撞风险，需注意协同",
                 suggestion: "建议降低速度，加强团队同步训练",
-                cover: "https://aka.doubaocdn.com/s/nDFw1wEPsM",
+                cover: "https://aka.doubaocdn.com/s/qezG1wOoso",
                 training: {
                     name: "急转衔接",
                     totalScore: 72,
@@ -868,7 +863,7 @@
                 risk: "low",
                 riskText: "无明显风险",
                 suggestion: "继续保持，可尝试提升行进速度",
-                cover: "https://aka.doubaocdn.com/s/Jf6x1wEPs4",
+                cover: "https://aka.doubaocdn.com/s/t8NU1wOos9",
                 training: {
                     name: "游龙巡街",
                     totalScore: 90,
@@ -892,7 +887,7 @@
                 risk: "medium",
                 riskText: "穿插过程中存在间距过小风险",
                 suggestion: "建议加强位置预判训练",
-                cover: "https://aka.doubaocdn.com/s/Emzr1wEPs4",
+                cover: "https://aka.doubaocdn.com/s/yfUF1wOoso",
                 training: {
                     name: "龙穿花",
                     totalScore: 78,
@@ -916,7 +911,7 @@
                 category: "基础动作",
                 riskLevel: "中风险",
                 riskColor: "riskMedium",
-                cover: "https://aka.doubaocdn.com/s/sDCs1wEPsM",
+                cover: "https://aka.doubaocdn.com/s/9vw11wOos1",
                 description: "用于火龙运动过程中的核心节奏衔接，是基础训练动作之一。该动作要求舞者以八字形路径舞动龙身，是舞龙运动中最基础也是最重要的动作模式。",
                 tags: ["节奏", "路径", "基础训练"],
                 suggestion: "建议初学者先在低速训练模式下熟悉路径变化，掌握基本的八字轨迹后再逐步提升速度。",
@@ -929,7 +924,7 @@
                 category: "危险动作",
                 riskLevel: "高风险",
                 riskColor: "riskHigh",
-                cover: "https://aka.doubaocdn.com/s/nDFw1wEPsM",
+                cover: "https://aka.doubaocdn.com/s/qezG1wOoso",
                 description: "在队形变化与路径转折中出现，需重点控制转身幅度与协同节奏。该动作要求队伍在高速运动中快速改变方向，对协同能力要求极高。",
                 tags: ["危险动作", "协同", "转身"],
                 suggestion: "建议拆分训练，并结合节奏提示逐步提升速度。初学者应先在静态下练习转身动作。",
@@ -942,7 +937,7 @@
                 category: "基础动作",
                 riskLevel: "低风险",
                 riskColor: "riskLow",
-                cover: "https://aka.doubaocdn.com/s/Jf6x1wEPs4",
+                cover: "https://aka.doubaocdn.com/s/t8NU1wOos9",
                 description: "巡游过程中的基础行进动作，保持队伍整体节奏与队形。这是最基础的入门动作，适合初学者练习。",
                 tags: ["巡游", "队形", "入门"],
                 suggestion: "这是入门级动作，建议新手从这个动作开始练习，培养团队节奏感。",
@@ -955,7 +950,7 @@
                 category: "组合动作",
                 riskLevel: "中风险",
                 riskColor: "riskMedium",
-                cover: "https://aka.doubaocdn.com/s/Emzr1wEPs4",
+                cover: "https://aka.doubaocdn.com/s/yfUF1wOoso",
                 description: "多人协同的穿花队形变换，考验团队配合与时机把握。通过龙身的穿插形成复杂的队形图案。",
                 tags: ["协同", "队形"],
                 suggestion: "需要多人配合训练，建议先分解练习每个环节，再进行整体合练。",
@@ -968,7 +963,7 @@
                 category: "组合动作",
                 riskLevel: "中风险",
                 riskColor: "riskMedium",
-                cover: "https://aka.doubaocdn.com/s/sDCs1wEPsM",
+                cover: "https://aka.doubaocdn.com/s/U6ag1wOose",
                 description: "经典造型动作，龙身盘绕形成壮观的盘龙造型。是乔林烟花火龙的标志性动作之一。",
                 tags: ["造型", "展示"],
                 suggestion: "练习时注意站位顺序，龙头要准确到位，龙身依次盘绕。",
@@ -981,7 +976,7 @@
                 category: "危险动作",
                 riskLevel: "高风险",
                 riskColor: "riskHigh",
-                cover: "https://aka.doubaocdn.com/s/Jf6x1wEPs4",
+                cover: "https://aka.doubaocdn.com/s/Ya2X1wOosL",
                 description: "烟花火龙的核心环节，手持烟花进行表演的高危动作。这是乔林烟花火龙最具特色的环节。",
                 tags: ["高危", "烟花"],
                 suggestion: "必须由经验丰富的传承人操作，严格遵守安全规范，建议在虚拟训练中充分练习后再实操。",
@@ -1422,5 +1417,5 @@
             showPage('home');
         });
     </script>
-</body>
-</html>
+
+</body></html>
